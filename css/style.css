@@ -1,9 +1,9 @@
 body {
-  font-family: system-ui, sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   line-height: 1.7;
-  margin: 40px;
+  margin: 0;
   color: #222;
-  background-color: #fff;
+  background-color: #eef2f7;
 }
 
 h1 {
@@ -55,14 +55,18 @@ img {
 
 .container {
   max-width: 900px;
-  margin: 60px auto;
+  margin: 0 auto;
   background: #fff;
-  padding: 60px;
+  padding: 40px 20px;
   border-radius: 12px;
 }
 
 .hero {
-  margin-bottom: 60px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  padding: 80px 20px;
+  border-radius: 0 0 24px 24px;
+  margin-bottom: 40px;
 }
 
 .hero h1 {
@@ -70,16 +74,17 @@ img {
 }
 
 .subtitle {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #666;
+  opacity: 0.9;
 }
 
 .card {
-  background: #fafafa;
-  padding: 30px;
+  background-color: #ffffff;
+  padding: 24px;
+  margin-bottom: 32px;
   border-radius: 12px;
-  margin-bottom: 30px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 .card a {
