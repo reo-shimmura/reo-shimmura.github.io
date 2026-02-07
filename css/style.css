@@ -62,21 +62,42 @@ img {
 }
 
 .hero {
-  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  position: relative;
+  background-image: url("../images/background.jpg");
+  background-size: cover;        /* 全体を覆う */
+  background-position: center;   /* 中央寄せ */
+  background-repeat: no-repeat;  /* 繰り返さない */
   color: white;
   padding: 80px 20px;
   border-radius: 0 0 24px 24px;
   margin-bottom: 40px;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.2)
+  );
+}
+
+.hero > * {
+  position: relative;
+}
+
 .hero h1 {
   font-size: 2.8rem;
+  margin-bottom: 12px;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  color: #666;
+  color: #ecd9d9;
   opacity: 0.9;
+  letter-spacing: 0.05em;
 }
 
 .card {
