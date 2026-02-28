@@ -2,33 +2,48 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>新村玲央</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<nav class="slide-menu" id="siteMenu">
+  <button class="menu-toggle" id="menuToggle" aria-label="メニュー">☰</button>
+  <div class="menu-panel" id="menuPanel" aria-hidden="true">
+    <ul>
+      <li><a href="#hero">トップ</a></li>
+      <li><a href="#about">自己紹介</a></li>
+      <li><a href="#research">研究について</a></li>
+      <li><a href="#skills">取得スキル</a></li>
+      <li><a href="#links">Links</a></li>
+    </ul>
+  </div>
+</nav>
+
 <div class="container">
 
   <div class="hero">
-    <h1>Reo Shimmura</h1>
+    <h1 id="hero">Reo Shimmura</h1>
     <p class="subtitle">
       広島大学情報科学部　ビジュアル情報学研究室
     </p>
   </div>
 
   <section class="card">
-    <h1>自己紹介</h1>
+    <h1 id="about">自己紹介</h1>
 
     <p class="highlight">
       名前：新村 玲央<br>
       所属・専攻：広島大学情報科学部情報科学科知能科学プログラム　ビジュアル情報学研究室<br>
-      趣味：ボードゲーム、麻雀、謎解き<br>
+      趣味：ボードゲーム、麻雀、謎解き、筋トレ<br>
       研究テーマ：深度画像と3D人体モデルを使用した体格推定
     </p>
   </section>
 
   <section class="card">
-    <h2>研究について</h2>
+    <h2 id="research">研究について</h2>
     <p>
       本研究では、深度画像から3D人体モデルを生成し、そこから得られる様々な形状指標から体格指標を推定します。
     </p>
@@ -38,12 +53,179 @@
     </p>
   </section>
 
-  <h2>Links</h2>
+  <section class="card">
+    <h2 id="skills">取得スキル</h2>
+    <p>
+      以下は勉強したプログラミング言語および習得したスキルの一覧です。各スキルについて、プロジェクトや研究での使用経験を簡潔に記載できます。
+    </p>
+
+    <ul class="skills-list">
+      <li class="skill" tabindex="0" data-years="4" data-rating="5">
+        <div class="skill-body">
+          <div class="skill-name">Python</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（機械学習・データ処理、PyTorch, NumPy）</div>
+        </div>
+      </li>
+      <li class="skill" tabindex="0" data-years="1" data-rating="2">
+        <div class="skill-body">
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（フロントエンド、DOM操作、小規模UI）</div>
+        </div>
+      </li>
+      <li class="skill" tabindex="0" data-years="1" data-rating="3">
+        <div class="skill-body">
+          <div class="skill-name">TypeScript</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（フロントエンド、DOM操作、小規模UI）</div>
+        </div>
+      </li>
+      <li class="skill" tabindex="0" data-years="4" data-rating="4">
+        <div class="skill-body">
+          <div class="skill-name">C</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（高速処理、ポインタ）</div>
+        </div>
+      </li>
+      <li class="skill" tabindex="0" data-years="1" data-rating="1">
+        <div class="skill-body">
+          <div class="skill-name">C++</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（高速処理、OpenCV連携）</div>
+        </div>
+      </li>
+      <li class="skill" tabindex="0" data-years="1" data-rating="3">
+        <div class="skill-body">
+          <div class="skill-name">HTML / CSS</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（レスポンシブデザイン、アクセシビリティ）</div>
+        </div>
+      </li>
+      <li class="skill" tabindex="0" data-years="2" data-rating="3">
+        <div class="skill-body">
+          <div class="skill-name">OpenCV</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（画像処理、深度画像の前処理）</div>
+        </div>
+      </li>
+      <li class="skill" tabindex="0" data-years="3" data-rating="4">
+        <div class="skill-body">
+          <div class="skill-name">PyTorch</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（深層学習モデル設計・学習）</div>
+        </div>
+      </li>
+      <li class="skill" tabindex="0" data-years="1" data-rating="3">
+        <div class="skill-body">
+          <div class="skill-name">Git</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（バージョン管理、共同開発）</div>
+        </div>
+      </li>
+      <li class="skill" tabindex="0" data-years="4" data-rating="4">
+        <div class="skill-body">
+          <div class="skill-name">機械学習</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（特徴量設計、評価手法）</div>
+        </div>
+      </li>
+      <li class="skill" tabindex="0" data-years="1" data-rating="5">
+        <div class="skill-body">
+          <div class="skill-name">基本情報技術者試験</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（2023年10月取得）</div>
+        </div>
+      </li>
+      <li class="skill" tabindex="0" data-years="1" data-rating="5">
+        <div class="skill-body">
+          <div class="skill-name">応用情報技術者試験</div>
+          <div class="skill-stats"><span class="years" aria-hidden="true"></span><span class="stars" aria-hidden="true"></span></div>
+          <div class="meta">（2024年10月取得）</div>
+        </div>
+      </ul>
+
+  </section>
+
+  <h2 id="links">Links</h2>
   <ul>
-    <li><a href="https://github.com/yourname" class="button">GitHub</a></li>
+    <li><a href="https://github.com/reo-shimmura" class="button">GitHub</a></li>
   </ul>
 
 </div>
+
+<script>
+(function(){
+  const menu = document.getElementById('siteMenu');
+  const toggle = document.getElementById('menuToggle');
+  const panel = document.getElementById('menuPanel');
+  toggle.addEventListener('click', ()=> {
+    menu.classList.toggle('open');
+    const open = menu.classList.contains('open');
+    panel.setAttribute('aria-hidden', !open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+  document.addEventListener('click', (e)=> {
+    if(!menu.contains(e.target) && menu.classList.contains('open')) {
+      menu.classList.remove('open');
+      panel.setAttribute('aria-hidden','true');
+      toggle.setAttribute('aria-expanded','false');
+    }
+  });
+  const links = panel.querySelectorAll('a[href^="#"]');
+  links.forEach(link=>{
+    link.addEventListener('click', function(e){
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if(target) {
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+      menu.classList.remove('open');
+      panel.setAttribute('aria-hidden','true');
+      toggle.setAttribute('aria-expanded','false');
+    });
+  });
+  const sections = Array.from(links).map(l=> document.querySelector(l.getAttribute('href'))).filter(Boolean);
+  function onScroll(){
+    const y = window.scrollY + 90;
+    let current = sections[0];
+    for(const sec of sections){
+      if(sec.offsetTop <= y) current = sec;
+    }
+    links.forEach(l => l.classList.toggle('active', document.querySelector(l.getAttribute('href')) === current));
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // Skills: render years and stars, and add keyboard navigation
+  const skills = Array.from(document.querySelectorAll('.skill'));
+  skills.forEach((el, idx) => {
+    const years = el.getAttribute('data-years');
+    const rating = parseInt(el.getAttribute('data-rating') || '0', 10);
+    const yearsEl = el.querySelector('.years');
+    const starsEl = el.querySelector('.stars');
+    if(yearsEl) yearsEl.textContent = years ? `${years}年` : '';
+    if(starsEl) {
+      starsEl.innerHTML = Array.from({length:5}).map((_,i)=>{
+        const filled = i < rating; return `<span class="star ${filled? 'filled':''}" aria-hidden="true">★</span>`;
+      }).join('');
+    }
+    // accessibility label (prefer new .skill-name)
+    const name = el.querySelector('.skill-name')?.textContent || el.querySelector('strong')?.textContent || 'スキル';
+    el.setAttribute('aria-label', `${name}、経験年数 ${years || '不明'}、習熟度 ${rating}/5`);
+    // keyboard navigation
+    el.addEventListener('keydown', (ev)=>{
+      if(ev.key === 'ArrowRight' || ev.key === 'ArrowDown'){
+        ev.preventDefault();
+        const next = skills[(idx+1) % skills.length]; next.focus();
+      } else if(ev.key === 'ArrowLeft' || ev.key === 'ArrowUp'){
+        ev.preventDefault();
+        const prev = skills[(idx-1+skills.length) % skills.length]; prev.focus();
+      }
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
