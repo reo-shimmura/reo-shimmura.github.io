@@ -1,3 +1,10 @@
+/*
+  style.css
+  説明: サイト全体のレイアウト・タイポグラフィ・コンポーネントのスタイルを定義。
+  主なセクション: body, .hero, .card, .button, .slide-menu, .skills-list, .projects-grid
+*/
+
+/* ページ全体の基本設定 */
 body {
   font-family: 'Inter', 'Noto Sans JP', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   line-height: 1.7;
@@ -65,6 +72,7 @@ img {
 }
 
 .hero {
+  /* ヒーロー領域: 背景画像とオーバーレイを配置 */
   position: relative;
   background-image: url("../images/background.jpg");
   background-size: cover;
@@ -106,6 +114,7 @@ img {
 }
 
 .card {
+  /* 汎用カードコンポーネント */
   background-color: rgba(255,255,255,0.96);
   padding: 26px 24px;
   margin-bottom: 28px;
@@ -118,6 +127,7 @@ img {
 }
 
 .button {
+  /* プライマリーボタンスタイル */
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -223,6 +233,7 @@ html {
 }
 
 .skill {
+  /* スキルカードの見た目 */
   background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(246,250,255,0.96));
   border: 1px solid rgba(16,42,67,0.06);
   padding: 12px 14px;
